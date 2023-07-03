@@ -217,7 +217,7 @@
                             <a href="#" data-w-id="2d88c805-0ba5-c1d9-e825-c9fd68f01cd2" class="nav__link">Services</a>
                         </li>
                         <li> 
-                            <a href="#" data-w-id="2d88c805-0ba5-c1d9-e825-c9fd68f01cd2" class="nav__link">About</a>
+                            <a href="about.html" data-w-id="2d88c805-0ba5-c1d9-e825-c9fd68f01cd2" class="nav__link">About</a>
                         </li>
                         <li> 
                             <a href="#" data-w-id="2d88c805-0ba5-c1d9-e825-c9fd68f01cd2" class="nav__link">Pottfolio</a>
@@ -369,17 +369,26 @@
                                     <h5 class="slider-heading txt-black txt-center">
                                         Digital Marketing                                    
                                     </h5>
+                                    <p>
+                                        Transform your business for the digital age. Expert consultancy to revitalize processes, drive innovation, and stay ahead of the competition
+                                    </p>
                                 </div>
 
                                 <div class="slider-item bg-tertiary rot-1">
                                     <h5 class="slider-heading txt-black">
                                         Data & innovation
                                     </h5>
+                                    <p>
+                                        Transform your business for the digital age. Expert consultancy to revitalize processes, drive innovation, and stay ahead of the competition
+                                    </p>
                                 </div>
                                 <div class="slider-item bg-secondary rot-6">
                                     <h5 class="slider-heading txt-black txt-center">
                                         Digital Marketing
                                     </h5>
+                                    <p>
+                                        Transform your business for the digital age. Expert consultancy to revitalize processes, drive innovation, and stay ahead of the competition
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -389,17 +398,26 @@
                                     <h5 class="slider-heading txt-black txt-center">
                                         Social Media
                                     </h5>
+                                    <p>
+                                        Transform your business for the digital age. Expert consultancy to revitalize processes, drive innovation, and stay ahead of the competition
+                                    </p>
                                 </div>
 
                                 <div class="slider-item bg-primary rot-1 slide-3">
                                     <h5 class="slider-heading txt-black">
                                         Creative Studio
                                     </h5>
+                                    <p>
+                                        Transform your business for the digital age. Expert consultancy to revitalize processes, drive innovation, and stay ahead of the competition
+                                    </p>
                                 </div>
                                 <div class="slider-item bg-tertiary rot-6 slide-1">
                                     <h5 class="slider-heading txt-black txt-center">
                                         Social Media
                                     </h5>
+                                    <p>
+                                        Transform your business for the digital age. Expert consultancy to revitalize processes, drive innovation, and stay ahead of the competition
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -409,17 +427,26 @@
                                     <h5 class="slider-heading txt-black txt-center">
                                         Consulting Marketing Strategy
                                     </h5>
+                                    <p>
+                                        Transform your business for the digital age. Expert consultancy to revitalize processes, drive innovation, and stay ahead of the competition
+                                    </p>
                                 </div>
 
                                 <div class="slider-item bg-secondary rot-1 slide-2">
                                     <h5 class="slider-heading txt-black">
                                         Web & App Dev
                                     </h5>
+                                    <p>
+                                        Transform your business for the digital age. Expert consultancy to revitalize processes, drive innovation, and stay ahead of the competition
+                                    </p>
                                 </div>
                                 <div class="slider-item bg-primary rot-6 slide-2">
                                     <h5 class="slider-heading txt-black txt-center">
                                         Consulting Marketing Strategy
                                     </h5>
+                                    <p>
+                                        Transform your business for the digital age. Expert consultancy to revitalize processes, drive innovation, and stay ahead of the competition
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -522,7 +549,7 @@
 
         <section data-w-id="1879bf2f-bcbf-f17c-db5d-9e8ba7e4608b" class="section about_section fp-auto-height-responsive fp-noscroll wf-section" id="section5">
 
-            <a data-w-id="3091e7ec-b677-056f-58e3-8e1a0e1906f6" href="#" class="cursor-wrapper no-strike modal-btn w-inline-block">
+            <a data-w-id="3091e7ec-b677-056f-58e3-8e1a0e1906f6" href="about.html" class="cursor-wrapper no-strike modal-btn w-inline-block">
                 <div data-w-id="64541a5a-db1a-8e09-527c-412881642686" class="cursor">
                 <h4 class="txt-black">learn<br>more</h4>
                 </div>
@@ -697,7 +724,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a data-w-id="9eaa9262-bbcf-c6d0-d012-0511fdceea71" href="#" class="footer__link">
+                                <a data-w-id="9eaa9262-bbcf-c6d0-d012-0511fdceea71" href="about.html" class="footer__link">
                                     About
                                 </a>
                             </li>
@@ -787,6 +814,7 @@
         var slideIndexS = 0,
             sliding = false;
                 $('#fullpage').fullpage({
+                    // anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage','5thpage','6thpage','7thpage','8thpage','9thpage', 'lastPage'],
                     menu: '#menu',
                     scrollingSpeed: 1000,
                     responsiveWidth: 350,
@@ -820,12 +848,12 @@
                             }
                             setTimeout(() => {
                             $(".slider-wrapper").addClass("pinned");
-                            }, 2500);
+                            }, 1250);
                          setTimeout(() => {
                            document
                              .querySelector(".custom-cursor-wrapper")
                              .classList.remove("d-none");
-                         }, 1250);
+                         }, 250);
                 } 
                 else if (origin.index == 3 && direction == "up") {
                         if (typeof fullpage_api !== "undefined") {
@@ -833,7 +861,7 @@
                             }
                             setTimeout(() => {
                             $(".slider-wrapper").addClass("pinned");
-                            }, 2500);
+                            }, 1250);
                          setTimeout(() => {
                            document
                              .querySelector(".custom-cursor-wrapper")
