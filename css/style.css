@@ -1272,6 +1272,12 @@ svg g g:nth-child(2) path {
     z-index: 8;
 }
 
+.slider-item p{
+	font-size: 1em;
+	color: #000;
+	text-align: center;
+}
+
 .slider-item.bg-primary{
     background-color: #ffd400;
 }
