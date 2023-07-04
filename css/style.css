@@ -664,6 +664,10 @@ body {
   }
 }
 
+html.w-mod-touch *{
+  background-attachment: scroll!important;
+}
+
 /* REUSED STYLE */
 
 .container {
@@ -813,8 +817,72 @@ ul#menu{
 
 
 
+/* PRELOADER */
 
+.preloader {
+  z-index: 999999;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.5s ease-in-out;
+  display: flex;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+}
 
+.preloader{
+  display: block;
+}
+.preloader.hide {
+  display: none;
+}
+
+.prload-split {
+  width: 100%;
+  height: 50vh;
+  background-color: #000;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+}
+.prload-split.bot {
+  align-items: flex-start;
+}
+
+.preload-content {
+  width: 100%;
+  height: 2px;
+  max-width: 800px;
+  background-color: #4c4c4c;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  display: flex;
+  position: relative;
+}
+
+.preload-bar {
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.preload-counter-wrapper {
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5em;
+  display: flex;
+}
+
+.txt-16 {
+  font-size: 1em;
+}
 
 
 
@@ -847,7 +915,7 @@ ul#menu{
 }
 
 .header .navbar .navbar__logo img {
-  max-height: 8.125em;
+  max-height: 5em;
 }
 
 .humberger__wrapper {
@@ -1071,7 +1139,7 @@ svg g g:nth-child(2) path {
 .text-running-wrapper {
   top: 50%;
   position: absolute;
-  background-color: #e7dbcf;
+  background-color: #EBEBE0;
   transform: translateY(-50%) rotate(4deg);
   bottom: auto;
   z-index: 1;
@@ -1272,12 +1340,6 @@ svg g g:nth-child(2) path {
     z-index: 8;
 }
 
-.slider-item p{
-	font-size: 1em;
-	color: #000;
-	text-align: center;
-}
-
 .slider-item.bg-primary{
     background-color: #ffd400;
 }
@@ -1288,6 +1350,12 @@ svg g g:nth-child(2) path {
 
 .slider-item.bg-secondary{
     background-color: #8e897f;
+}
+
+.slider-item p{
+  font-size: 1em;
+  color: #000;
+  text-align: center;
 }
 
 .slider-heading{
