@@ -200,3 +200,68 @@
     -webkit-text-stroke-color: #fff;
     -webkit-text-stroke-width: 1px;
 }
+
+.contact__section-map .footer__title-section{
+    margin-top: 50px;
+}
+
+.contact__section-map .footer__content{
+    margin-block-start: 50px;
+}
+
+.contact__section-map .footer__text{
+    font-size: 2.5em !important;
+}
+
+.contact__section-map .mail__to-wraper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: transparent;
+    height: unset;
+    padding-inline: initial;
+}
+
+.contact__section-map .mail__to-wraper .mail__input-filed{
+    background-color: #fff;
+    height: 3.5em;
+    border-radius: 5em;
+    padding-inline: 1.4em;
+}
+
+.contact__section-map .mail__to-wraper textarea{
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 2.5em !important;
+    resize: none;
+    padding-block-start: 1rem;
+    outline: none;
+    font-size: 1em;
+}
+
+
+.form__sent{
+    background-color: #ffd400;
+    width: 100%;
+    padding-block: 15px;
+    border-radius: 5rem;
+    font-size: 1.2em;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.contact__map{
+    width: 100% !important;
+    height: 100vh;
+}
+
+
+.last_section.map{
+    min-height: 10vh !important;
+}
+
+.last_section.map .footer__bottom{
+    position: initial;
+}
