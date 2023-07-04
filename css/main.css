@@ -40,7 +40,8 @@
     gap: 90px;
 }
 
-.reveal__banner{
+.reveal__banner,
+.reveal__banner-right{
     position: relative;
     visibility: hidden;
     width: 100%;
@@ -264,4 +265,61 @@
 
 .last_section.map .footer__bottom{
     position: initial;
+}
+
+.services__container{
+    display: grid;
+    gap: 50px;
+    margin-block-start: 75px;
+}
+
+.service__items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 25px; */
+}
+
+.services_items-banner{
+    width: 22em;
+    height: 18em;
+    background-color: #ffd400;
+    border-radius: 2rem;
+    display: flex;
+}
+
+.service__items-title{
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-block-end: 20px;
+}
+
+.services__items-descritpion{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 1.1rem;
+    max-width: 60ch;
+}
+
+.service_button{
+    background-color: #ffd400;
+    font-size: 15px;
+    border-radius: 2.5rem;
+    /* padding: 25px; */
+    width: 170px;
+    height: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.services_items-banner.bg-primary{
+    background-color: #ffd400;
+}
+.services_items-banner.bg-tertiary{
+    background-color: #e7dbcf;
+}
+.services_items-banner.bg-secondary{
+    background-color: #8e897f;
 }
