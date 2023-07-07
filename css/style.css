@@ -897,6 +897,7 @@ ul#menu{
   justify-content: center;
   position: relative;
   width: 100%;
+  /* background-color: #fff; */
 }
 
 .header .navbar {
@@ -915,7 +916,7 @@ ul#menu{
 }
 
 .header .navbar .navbar__logo img {
-  max-height: 5em;
+  max-height: 3.5em;
 }
 
 .humberger__wrapper {
@@ -1617,6 +1618,7 @@ svg g g:nth-child(2) path {
 
 .blog__item {
   position: relative;
+  cursor: pointer !important;
 }
 
 .blog__content{
