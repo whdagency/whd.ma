@@ -1,25 +1,64 @@
 gsap.registerPlugin(ScrollTrigger);
 
-let revealContainers = document.querySelectorAll(".reveal__banner");
-
-revealContainers.forEach((container) => {
+gsap.utils.toArray(".reveal__banner").forEach((container) => {
   let image = container.querySelector("img");
   let tl = gsap.timeline({
     scrollTrigger: {
       trigger: container,
-      toggleActions: "restart none none reset"
+      // start: "top 120%",
+      toggleActions: "restart none none reverse"
     }
   });
 
   tl.set(container, { autoAlpha: 1 });
-  tl.from(container, 1.5, {
+  tl.from(container, {
+    duration: 3,
     xPercent: -100,
-    ease: Power2.out
+    skewX: 0.1,
+    ease: "expo"
   });
-  tl.from(image, 1.5, {
+  tl.from(image, {
+    duration: 3,
     xPercent: 100,
-    scale: 1.3,
-    delay: -1.5,
-    ease: Power2.out
-  });
+    skewX: 0.1,
+    ease: "expo"
+  }, 0);
 });
+
+gsap.utils.toArray(".banner__bg").forEach((container) => {
+  let image = container.querySelector("img");
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: container,
+      // start: "top 120%",
+      toggleActions: "restart none none reverse"
+    }
+  });
+
+  tl.set(container, { autoAlpha: 1 });
+  tl.from(container, {
+    duration: 3,
+    yPercent: 100,
+    skewX: 0.1,
+    ease: "expo"
+  });
+  tl.from(image, {
+    duration: 3,
+    yPercent: -100,
+    skewX: 0.1,
+    ease: "expo"
+  }, 0);
+});
+
+
+
+const tl = gsap.timeline();
+
+
+  tl.from('.banner__text', {
+    duration: 0.8,
+    y: '10%',
+    opacity: 0,
+    ease: 'power2.out',
+    skewX: 0.1,
+  })
