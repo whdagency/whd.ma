@@ -2,6 +2,9 @@
     .image__banner{
         display: none;
     }
+    .hero__title{
+        font-size: 5em;
+    }
 
     .image__banner .lottie__anim{
         height: 30em;
