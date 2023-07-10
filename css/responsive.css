@@ -84,7 +84,9 @@
         margin-top: 0em;
     }
 
-    
+    .last_section.map{
+        height: 15vh !important;
+    }
     .footer__content{
         margin-block-start: 50px;
     }
