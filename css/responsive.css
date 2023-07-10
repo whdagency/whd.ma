@@ -69,6 +69,10 @@
         font-size: 4em !important;
     }
 
+    .banner__bg{
+        visibility: visible;
+    }
+
     .contact__section-map{
         padding-block: 100px;
     }
