@@ -1,19 +1,62 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
+    
+    .hero__title{
+        font-size: 5.5em;
+    }
+
+    .txt-running{
+        font-size: 3em;
+    }
     .image__banner{
         display: none;
     }
-    .hero__title{
-        font-size: 5em;
+
+    .product__slider-content .product_item_info .product_info_subtitle{
+        font-size: 8vw;
     }
 
+    .about_section .first-section{
+        margin-top: 10em;
+    }
+
+    .contact__link{
+        transform: translate(-50%, 90%);
+    }
+    .contact__text{
+        font-size: 10vw;
+    }
     .image__banner .lottie__anim{
         height: 30em;
+    }
+
+    .last_section .footer__title-section{
+        margin-top: 13em;
+    }
+
+    .footer__text{
+        font-size: 3.2em !important;
+    }
+
+    .form__btn{
+        width: 2.7em;
+        height: 2.7em;
+        right: 0.3em;
     }
 
     .footer__bottom-wrapper{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 25px;
+    }
+
+    .copyright{
+        order: 1;
+        grid-column: 1 / span 2;
+        text-align: center;
+    }
+
+    .footer__list, .footer__social{
+        justify-content: center;
     }
 }
 
