@@ -29,6 +29,13 @@
         height: 30em;
     }
 
+    .section-title{
+        font-size: 4.5em !important;
+    }
+
+    .blog__title{
+        font-size: 2.1em;
+    }
     .last_section .footer__title-section{
         margin-top: 13em;
     }
