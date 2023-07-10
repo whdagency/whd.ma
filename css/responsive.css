@@ -77,9 +77,14 @@
         height: auto;
     }
     .last_section .footer__title-section{
+        margin-top: 7em;
+    }
+
+    #luxy .last_section .footer__title-section{
         margin-top: 0em;
     }
 
+    
     .footer__content{
         margin-block-start: 50px;
     }
