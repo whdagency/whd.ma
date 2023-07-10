@@ -138,7 +138,7 @@ function startAni(event) {
             });
             setTimeout(() => {
               slideTarget.attr("trans", 2);
-            }, 1500);
+            }, 100);
           } 
         else if (slideTarget.attr("trans") == 2) {
             slideTarget.css({
@@ -146,7 +146,7 @@ function startAni(event) {
             });
             setTimeout(() => {
               slideTarget.attr("trans", 1);
-            }, 1500);
+            }, 100);
           } 
           
           else if (slideTarget.attr("trans") == 1) {
@@ -155,7 +155,7 @@ function startAni(event) {
             });
             setTimeout(() => {
               slideTarget.attr("trans", 0);
-            }, 500);
+            }, 100);
           } else if (slideTarget.attr("trans") == 0) {
             $(".slider-wrapper").removeClass("pinned");
             if (typeof fullpage_api !== "undefined") {
@@ -173,7 +173,7 @@ function startAni(event) {
             setTimeout(() => {
               slideTarget.attr("trans", 1);
             
-            }, 1500);
+            }, 100);
           } else if (slideTarget.attr("trans") == 1) {
             slideTarget.css({
               transform: "translateY(-40%)",
@@ -181,7 +181,7 @@ function startAni(event) {
             setTimeout(() => {
               slideTarget.attr("trans", 2);
             
-            }, 1500);
+            }, 100);
           } else if (slideTarget.attr("trans") == 2) {
             slideTarget.css({
               transform: "translateY(-65%)",
@@ -189,7 +189,7 @@ function startAni(event) {
             setTimeout(() => {
               slideTarget.attr("trans", 3);
             
-            }, 1500);
+            }, 100);
           }
 
           else if(slideTarget.attr("trans") == 3){
