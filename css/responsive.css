@@ -1,6 +1,6 @@
 @media screen and (max-width: 1440px) {
     
-    .hero__title{
+      .hero__title{
         font-size: 5.5em;
     }
 
@@ -34,7 +34,17 @@
     }
 
     .blog__title{
-        font-size: 2.1em;
+        font-size: 2em;
+    }
+
+    .blog__container{
+        margin-top: 4em;
+    }
+
+    .blog__banner img{
+        height: 25em;
+        width: 100%;
+        object-fit: cover;
     }
     .last_section .footer__title-section{
         margin-top: 13em;
