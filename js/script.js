@@ -77,58 +77,115 @@ function startAni(event) {
     if ($(".slider-wrapper").hasClass("pinned")) {
       if(window.innerWidth > 425)
       {
-        if (event.deltaY < 0) {
-         if (slideTarget.attr("trans") == 2) {
-            slideTarget.css({
-              transform: "translateY(-20%)",
-            });
-            setTimeout(() => {
-              slideTarget.attr("trans", 1);
-            }, 1250);
-          } 
-          
-          else if (slideTarget.attr("trans") == 1) {
-            slideTarget.css({
-              transform: "translateY(0%)",
-            });
-            setTimeout(() => {
-              slideTarget.attr("trans", 0);
-            }, 1250);
-          } else if (slideTarget.attr("trans") == 0) {
-            $(".slider-wrapper").removeClass("pinned");
-            if (typeof fullpage_api !== "undefined") {
-              fullpage_api.setAllowScrolling(true);
-            }
-            fullpage_api.moveSectionUp();
-          }
-        } 
-        else if (event.deltaY > 0) {
-          // console.log("scrolling down");
-          if (slideTarget.attr("trans") == 0) {
-            slideTarget.css({
-              transform: "translateY(-20%)",
-            });
-            setTimeout(() => {
-              slideTarget.attr("trans", 1);
-            
-            }, 1250);
-          } else if (slideTarget.attr("trans") == 1) {
-            slideTarget.css({
-              transform: "translateY(-40%)",
-            });
-            setTimeout(() => {
-              slideTarget.attr("trans", 2);
-            
-            }, 1250);
-          } else if (slideTarget.attr("trans") == 2) {
-            $(".slider-wrapper").removeClass("pinned");
-            if (typeof fullpage_api !== "undefined") {
-              fullpage_api.setAllowScrolling(true);
-            }
-            fullpage_api.moveSectionDown();
-          }
-            
+        if(window.innerWidth <= 1440){
+          if (event.deltaY < 0) {
+            if (slideTarget.attr("trans") == 2) {
+               slideTarget.css({
+                 transform: "translateY(-30%)",
+               });
+               setTimeout(() => {
+                 slideTarget.attr("trans", 1);
+               }, 250);
+             } 
+             
+             else if (slideTarget.attr("trans") == 1) {
+               slideTarget.css({
+                 transform: "translateY(0%)",
+               });
+               setTimeout(() => {
+                 slideTarget.attr("trans", 0);
+               }, 250);
+             } else if (slideTarget.attr("trans") == 0) {
+               $(".slider-wrapper").removeClass("pinned");
+               if (typeof fullpage_api !== "undefined") {
+                 fullpage_api.setAllowScrolling(true);
+               }
+               fullpage_api.moveSectionUp();
+             }
+           } 
+           else if (event.deltaY > 0) {
+             // console.log("scrolling down");
+             if (slideTarget.attr("trans") == 0) {
+               slideTarget.css({
+                 transform: "translateY(-30%)",
+               });
+               setTimeout(() => {
+                 slideTarget.attr("trans", 1);
+               
+               }, 250);
+             } else if (slideTarget.attr("trans") == 1) {
+               slideTarget.css({
+                 transform: "translateY(-50%)",
+               });
+               setTimeout(() => {
+                 slideTarget.attr("trans", 2);
+               
+               }, 250);
+             } else if (slideTarget.attr("trans") == 2) {
+               $(".slider-wrapper").removeClass("pinned");
+               if (typeof fullpage_api !== "undefined") {
+                 fullpage_api.setAllowScrolling(true);
+               }
+               fullpage_api.moveSectionDown();
+             }
+               
+           }
         }
+        else if(window.innerWidth > 1440) {
+          if (event.deltaY < 0) {
+           if (slideTarget.attr("trans") == 2) {
+              slideTarget.css({
+                transform: "translateY(-20%)",
+              });
+              setTimeout(() => {
+                slideTarget.attr("trans", 1);
+              }, 250);
+            } 
+            
+            else if (slideTarget.attr("trans") == 1) {
+              slideTarget.css({
+                transform: "translateY(0%)",
+              });
+              setTimeout(() => {
+                slideTarget.attr("trans", 0);
+              }, 250);
+            } else if (slideTarget.attr("trans") == 0) {
+              $(".slider-wrapper").removeClass("pinned");
+              if (typeof fullpage_api !== "undefined") {
+                fullpage_api.setAllowScrolling(true);
+              }
+              fullpage_api.moveSectionUp();
+            }
+          } 
+          else if (event.deltaY > 0) {
+            // console.log("scrolling down");
+            if (slideTarget.attr("trans") == 0) {
+              slideTarget.css({
+                transform: "translateY(-20%)",
+              });
+              setTimeout(() => {
+                slideTarget.attr("trans", 1);
+              
+              }, 250);
+            } else if (slideTarget.attr("trans") == 1) {
+              slideTarget.css({
+                transform: "translateY(-40%)",
+              });
+              setTimeout(() => {
+                slideTarget.attr("trans", 2);
+              
+              }, 250);
+            } else if (slideTarget.attr("trans") == 2) {
+              $(".slider-wrapper").removeClass("pinned");
+              if (typeof fullpage_api !== "undefined") {
+                fullpage_api.setAllowScrolling(true);
+              }
+              fullpage_api.moveSectionDown();
+            }
+              
+          }
+        }
+        
       }
       if(window.innerWidth <= 425){
         if (event.deltaY < 0) {
