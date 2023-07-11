@@ -281,7 +281,6 @@ function startAni(event) {
   window.addEventListener("wheel", (e) => startAni(e));
   window.addEventListener("wheel", (e) => startFooter(e));
 
-}
 })
 
 
