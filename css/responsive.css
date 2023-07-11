@@ -1390,6 +1390,11 @@
     .blog__title-section svg{
         width: 120px !important;
     }
-
+    #fullpage .title-wrapper.slider-title{
+        margin-block: 8em;
+    }
+    .slider-item{
+        height: 25em;
+    }
     
 }
