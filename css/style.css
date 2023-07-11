@@ -1042,6 +1042,10 @@ ul#menu{
   display: flex;
 }
 
+.hero__heading-wrapper.mobile{
+  display: none;
+}
+
 .cropper-heading {
   display: flex;
   overflow: hidden;
