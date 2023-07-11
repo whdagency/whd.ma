@@ -1251,6 +1251,14 @@ svg g g:nth-child(2) path {
     align-items: flex-start;
 }
 
+.service_slide{
+  display: block;
+}
+
+.service_slide-mobile{
+  display: none !important;
+}
+
 .slider-wrapper{
     width: 100%;
     height: 100%;
