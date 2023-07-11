@@ -76,8 +76,8 @@
     .blog__details-related_list .blog__banner img{
         height: auto;
     }
-    .last_section .footer__title-section{
-        margin-top: 0em;
+    #fullpage .last_section .footer__title-section{
+        margin-top: 10em;
     }
 
     .footer__content{
