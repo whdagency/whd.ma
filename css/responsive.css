@@ -1396,5 +1396,9 @@
     .slider-item{
         height: 25em;
     }
+
+    .blog__banner img{
+        height: 14rem;
+    }
     
 }
