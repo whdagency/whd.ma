@@ -281,47 +281,6 @@ function startAni(event) {
   window.addEventListener("wheel", (e) => startAni(e));
   window.addEventListener("wheel", (e) => startFooter(e));
 
- // Blog hover section
- let text = document.querySelectorAll(".text-wrapper.ani-hover"),
- parentSection = document.querySelector(".mouse-ani-sect");
-let mouse = {
- x: Math.abs(document.documentElement.clientWidth * 0.5),
- y: Math.abs(document.documentElement.clientHeight * 0.15),
-};
-
-if (parentSection !== null && window.innerWidth > 991) {
-
- const updateCoordinates = (e) => {
-   mouse.x = e.clientX;
-   mouse.y = e.clientY;
- };
-
- document.addEventListener("mousemove", function(event) {
-  const x = event.pageX - 10;
-  const y = event.pageY - 10;
-  const cursor = document.querySelector("#cursor");
-  cursor.style.left = x + "px";
-  cursor.style.top = y + "px";
-});
-
- text.forEach((el) => {
-   el.addEventListener("mouseover", () => {
-     
-     $('#cursor').css('transform', 'scale(2)')
-   });
-
-   el.addEventListener("mouseout", () => {
-    $('#cursor').css('transform', 'scale(1)')
-   });
- });
- parentSection.addEventListener("mousemove", (e) => {
-   updateCoordinates(e);
- });
-
- function loop() {
-   requestAnimationFrame(loop);
- }
- requestAnimationFrame(loop);
 }
 })
 
