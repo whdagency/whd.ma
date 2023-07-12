@@ -1411,4 +1411,40 @@
     .slider-item{
         height: 24em;
     }
+
+    .blog__title-section svg{
+        width: 120px !important;
+    }
+
+    .blog__container{
+        margin-top: 0.5em;
+    }
+
+    .blog__banner img{
+        height: 13rem;
+    }
+
+    .blog__categorie{
+        font-size: .75rem;
+    }
+
+    .blog__title{
+        font-size: 1em;
+    }
+
+    .last_section .footer__title-section{
+        margin-block-start: 50px;
+    }
+
+    .footer__content{
+        margin-block-start: 35px;
+    }
+
+    .footer__info-contact a{
+        font-size: 1.5em;
+    }
+
+    .footer__bottom-wrapper{
+        row-gap: 10px;
+    }
 }
