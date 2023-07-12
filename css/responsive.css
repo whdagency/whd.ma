@@ -1408,12 +1408,16 @@
         margin-block: 5em;
     }
 
+    .hero__title{
+        font-size: 3rem !important;
+    }
+
     .header .navbar{
-        top: 25px;
+        top: 50px;
     }
 
     .txt-running-box{
-        bottom: -9vw;
+        bottom: -10vw;
     }
     .slider-item{
         height: 24em;
