@@ -1408,6 +1408,13 @@
         margin-block: 5em;
     }
 
+    .header .navbar{
+        top: 25px;
+    }
+
+    .txt-running-box{
+        bottom: -9vw;
+    }
     .slider-item{
         height: 24em;
     }
