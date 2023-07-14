@@ -1333,8 +1333,8 @@ svg g g:nth-child(2) path {
 
 .slider-item{
     width: 21.25em;
-    height: 21.25em;
-    grid-gap: 2em;
+    height: 22.7em;
+    grid-gap: 1.5em;
     border-radius: 1.25em;
     /* display: flex;
     flex-direction: column;
@@ -1373,7 +1373,7 @@ svg g g:nth-child(2) path {
 
 .slider-heading{
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 1.75em;
     margin-block: 0;
     font-family: Odasans extended, sans-serif;
     color: #000;
