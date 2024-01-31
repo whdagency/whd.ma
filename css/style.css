@@ -978,10 +978,11 @@ ul#menu{
 .nav__link-wrapper{
   height: 100%;
   grid-gap: 3em;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-inline: auto;
   padding: 0.25em;
+  padding-inline: 19em;
   display: flex;
 
 }
@@ -996,10 +997,11 @@ ul#menu{
   gap: 2em;
   flex-direction: column;
   text-align: left !important;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 1em;
   max-width: 1320px;
   width: 100%;
+  padding-block-start: 7em;
 }
 
 .nav__link{
@@ -1025,7 +1027,15 @@ ul#menu{
 }
 
 
-
+.menu_wrapper-video{
+  width: 70%;
+  max-height: 100%;
+  position: absolute;
+  top: 60%;
+  right: -10%;
+  z-index: -1;
+  transform: translateY(-50%);
+}
 
 
 /* HERO */
@@ -1228,7 +1238,15 @@ svg g g:nth-child(2) path {
   height: 40em;
 }
 
-
+.Performance_video{
+  width: 70%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  right: -15%;
+  z-index: -1;
+  transform: translateY(-50%);
+}
 
 
 
