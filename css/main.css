@@ -125,7 +125,7 @@
     text-transform: uppercase;
     font-weight: 400;
     line-height: 100%;
-    margin-block: 0;
+    margin-block: 0; 
 }
 
 .overlay-header{
@@ -416,14 +416,14 @@
 .contact__section-map .mail__to-wraper .mail__input-filed{
     background-color: #fff;
     height: 3.5em;
-    border-radius: 5em;
+    border-radius: 12px;
     padding-inline: 1.4em;
 }
 
 .contact__section-map .mail__to-wraper textarea{
     width: 100% !important;
     height: 100% !important;
-    border-radius: 2.5em !important;
+    border-radius: 12px !important;
     resize: none;
     padding-block-start: 1rem;
     outline: none;
@@ -435,7 +435,7 @@
     background-color: #ffd400;
     width: 100%;
     padding-block: 15px;
-    border-radius: 5rem;
+    border-radius: 12px;
     font-size: 1.2em;
     color: #000;
     font-family: "Poppins", sans-serif;

@@ -272,6 +272,78 @@ function startAni(event) {
 
     }
   }
+
+ /**
+  * Sticky Cursor with Delay
+  */
+  function initStickyCursorWithDelay() {
+      
+    // Sticky Cursor with delay
+    // https://greensock.com/forums/topic/21161-animated-mouse-cursor/
+    var cursorBtn = $(".mouse-pos-list-btn");
+    var cursorSpan = $(".mouse-pos-list-span");
+  
+  
+    var posXBtn = 0
+    var posYBtn = 0
+    var posXSpan = 0
+    var posYSpan = 0
+    var mouseX = 0
+    var mouseY = 0
+  
+    if(document.querySelector(".mouse-pos-list-btn, .mouse-post-list-span")) {
+    gsap.to({}, 0.0083333333, {
+      repeat: -1,
+      onRepeat: function() {
+  
+  
+        if(document.querySelector(".mouse-pos-list-btn")) {
+          posXBtn += (mouseX - posXBtn) / 7;
+          posYBtn += (mouseY - posYBtn) / 7;
+          gsap.set(cursorBtn, {
+            css: {
+            left: posXBtn,
+            top: posYBtn
+            }
+          });
+        }
+        if(document.querySelector(".mouse-pos-list-span")) {
+          posXSpan += (mouseX - posXSpan) / 6;
+          posYSpan += (mouseY - posYSpan) / 6;   
+          gsap.set(cursorSpan, {
+            css: {
+            left: posXSpan,
+            top: posYSpan
+            }
+          });
+        }
+      }
+    });
+    }
+  
+    $(document).on("mousemove", function(e) {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+  
+    // Animated Section Assortiment Single Floating Image
+    // Source: http://jsfiddle.net/639Jj/1/ 
+  
+    $('.blog__item').on('mouseenter', function() {
+      $('.mouse-pos-list-btn, .mouse-pos-list-span').addClass('active-big');
+      $('.custom-cursor-wrapper').addClass("d-none");
+    });
+    $('.blog__item').on('mouseleave', function() {
+      $('.mouse-pos-list-btn, .mouse-pos-list-span').removeClass('active-big');
+      $('.custom-cursor-wrapper').removeClass("d-none");
+
+    });
+   
+  
+  }
+
+  initStickyCursorWithDelay();
+
   
   let slideTarget = $('.slider-wrapper-inner')
   let footerTarget = $('.contact__text')

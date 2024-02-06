@@ -946,7 +946,7 @@ ul#menu{
   justify-content: center;
   align-items: center;
   display: flex;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   border-radius: 50%;
 }
 
@@ -1249,11 +1249,23 @@ svg g g:nth-child(2) path {
 }
 
 
+.work-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
 
-
-
-
-
+.work-item::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.4;
+}
 
 
 
@@ -1485,6 +1497,27 @@ svg g g:nth-child(2) path {
     transform: scale(0.7);
     transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
     filter: grayscale(100%) sepia(20%) brightness(80%);
+    position: relative;
+}
+
+.product__img-banner img::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.4;
+}
+
+.overlay__work{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .4;
 }
 
 .slide.active .product__img-banner img{
@@ -1494,9 +1527,9 @@ svg g g:nth-child(2) path {
 
 .product__slider-content .product_item_info{
   position: absolute;
-  top: 10%;
+  bottom: 10%;
   z-index: 1;
-  transform: translateX(-30%);
+  transform: translateX(-55%);
   color: #fff;
 }
 
@@ -1504,20 +1537,33 @@ svg g g:nth-child(2) path {
 .product__slider-content .product_item_info .product_info_subtitle{
   position: relative;
   line-height: 6vw !important;
-  color: transparent;
+  color: #fff;
   font-weight: 400;
   font-size: 6vw;
-  -webkit-font-smoothing: antialiased;
-	 -webkit-text-stroke: 2px #dbd8d6;
+  font-family: Odasans extended, sans-serif;
+  text-transform: uppercase;
+  /* -webkit-font-smoothing: antialiased;
+	 -webkit-text-stroke: 2px #dbd8d6; */
 }
 
 .product__slider-content .product_item_info .product_info_category{
   position: relative;
-  line-height: 24px;
+  /* line-height: 24px; */
   font-weight: 400;
   font-size: 24px;
   -webkit-font-smoothing: antialiased;
+  /* background-color: #ffd400; */
+  height: 40px;
+  padding-inline: 15px;
+  text-align: center;
+  max-width: max-content;
+  display: grid;
+  place-content: center;
   margin-top: 2vh;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 
@@ -1646,6 +1692,14 @@ svg g g:nth-child(2) path {
   position: relative;
 }
 
+.blog__banner:hover .custom-cursor-body{
+   display: none !important;
+}
+
+.blog__banner img{
+  border-radius: 20px;
+}
+
 .blog__item {
   position: relative;
   cursor: pointer !important;
@@ -1676,6 +1730,74 @@ svg g g:nth-child(2) path {
 }
 
 
+/* CURSOR */
+.mouse-pos-list-btn,
+.mouse-pos-list-span {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  border: 0;
+  background: #000;
+  position: fixed;
+  z-index: 26;
+  pointer-events: none;
+  transform: translate(-50%, -60%);
+  overflow: hidden;
+  display: block;
+  transition: width .4s cubic-bezier(0.36, 0, 0.66, 0), height .4s cubic-bezier(0.36, 0, 0.66, 0);
+  left: 50.5%;
+  top: -10%;
+  left: -10%;
+  left: 0%;
+  top: 0%;
+  will-change: transform, width, height;
+}
+
+.mouse-pos-list-span {
+  background: transparent;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 49.75%;
+  top: -11.25%;
+  left: -11.25%;
+  left: 0%;
+  top: 0%;
+}
+
+.mouse-pos-list-span p {
+  margin: 0;
+}
+
+
+.mouse-pos-list-btn.active-big,
+.mouse-pos-list-span.active-big {
+  width: calc(clamp(3.75em, 5.5vw, 5em) * 1.66);
+  height: calc(clamp(3.75em, 5.5vw, 5em) * 1.66);
+  transition: width .4s cubic-bezier(0.34, 1, 0.64, 1), height .4s cubic-bezier(0.34, 1, 0.64, 1);
+}
+
+
+
+.mouse-pos-list-span.active-big {
+  border-radius: 0;
+  width: clamp(10em, 27.5vw, 25em);
+  transition: width .4s cubic-bezier(0.34, 1, 0.64, 1), height .4s cubic-bezier(0.34, 1, 0.64, 1);
+}
+
+.mouse-pos-list-span p {
+  font-size: 0em;
+  transition: font-size .4s cubic-bezier(0.36, 0, 0.66, 0);
+  will-change: font-size;
+}
+
+.mouse-pos-list-span.active-big p {
+  font-size: 1.12em;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: font-size .4s cubic-bezier(0.34, 1, 0.64, 1);
+}
 
 
 /* FOOTER */
