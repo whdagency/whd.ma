@@ -48,6 +48,8 @@
 .float-img {
     position: absolute;
     border-radius: 8px;
+    transition: all .2s ease;
+    will-change: transfrom;
   }
   .float-img.img-1 {
     width: 21.5em;
