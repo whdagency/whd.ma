@@ -1,6 +1,6 @@
 /* TYPOGRAPHY */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800;900&display=swap');
 @font-face {
   font-family: "Odasans";
   src: url("../Font/Odasans-Medium.ttf") format("truetype");
@@ -1064,10 +1064,12 @@ ul#menu{
 }
 
 .hero__title {
-  font-size: 8em;
+  font-size: 7em;
   text-transform: uppercase;
-  font-family: Odasans extended, sans-serif;
-  font-weight: 400;
+  /* font-family: Odasans extended, sans-serif; */
+  /* font-family: 'Hanken Grotesk', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
   line-height: 100%;
   margin-block: 0;
 }

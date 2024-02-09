@@ -232,6 +232,40 @@
         <section class="section blog__details-content fp-auto-height-responsive fp-noscroll wf-section">
             <div class="blog__dc-container">
                 <div class="blog__details-content-wrap">
+                    <div class="blog__details-conclusion_share">
+                        <!-- <h3 class="blog__details-conclusion_share_title">
+                            share with your friends
+                        </h3> -->
+
+                        <ul class="blog__details-conclusion_share_list">
+                            <li>
+                                <a href="#" class="blog__details-conclusion_share_link">
+                                    <i class='bx bxl-facebook'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="blog__details-conclusion_share_link">
+                                    <i class='bx bxl-twitter'></i>                                        
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="blog__details-conclusion_share_link">
+                                    <i class='bx bxl-instagram' ></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="blog__details-conclusion_share_link">
+                                    <i class='bx bxl-reddit'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="blog__details-conclusion_share_link">
+                                    <i class='bx bxl-whatsapp'></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
                     <div class="blog__details-content-text">
                         <h2 class="blog__details-content-text-title">
                             HOW TO BUILD A SUCCESSFUL CAMPAIGN
@@ -312,39 +346,6 @@
                                 </div>
                             </div>
 
-                            <div class="blog__details-conclusion_share">
-                                <h3 class="blog__details-conclusion_share_title">
-                                    share with your friends
-                                </h3>
-
-                                <ul class="blog__details-conclusion_share_list">
-                                    <li>
-                                        <a href="#" class="blog__details-conclusion_share_link">
-                                            <i class='bx bxl-facebook'></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="blog__details-conclusion_share_link">
-                                            <i class='bx bxl-twitter'></i>                                        
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="blog__details-conclusion_share_link">
-                                            <i class='bx bxl-instagram' ></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="blog__details-conclusion_share_link">
-                                            <i class='bx bxl-reddit'></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="blog__details-conclusion_share_link">
-                                            <i class='bx bxl-whatsapp'></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
 
                         <div class="blog__details-related">
@@ -532,7 +533,21 @@
     <script src="js/fullpage.scrollHorizontally.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
-    <script charset="utf-8">const luxyWrapper=document.querySelector("#luxy");if(luxyWrapper!==null){if(window.innerWidth>767){luxy.init({wrapper:"#luxy",wrapperSpeed:0.08,});}}</script>
+    <script charset="utf-8">
+    const luxyWrapper=document.querySelector("#luxy");
+    if(luxyWrapper!==null){if(window.innerWidth>767){luxy.init({wrapper:"#luxy",wrapperSpeed:0.08,});}}
+        const stickyElement = document.querySelector('.blog__details-conclusion_share');
+
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY || window.pageYOffset;
+
+        if (scrollY > 150) { // Adjust the threshold
+            stickyElement.classList.add("display")
+        } else {
+            stickyElement.classList.remove("display")
+        }
+    });
+    </script>
     <script src="js/whd.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/script.js"></script>
